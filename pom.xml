@@ -3,13 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ch.psi</groupId>
     <artifactId>jzy3d</artifactId>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
     <repositories>
-    <repository>
-        <id>jzy3d-releases</id>
-        <name>Jzy3d Snapshots</name>
-        <url>http://www.jzy3d.org/maven/releases</url>
-    </repository>  
+  <repository>
+     <id>jzy3d-snapshots</id>
+     <name>Jzy3d Snapshots</name>
+     <url>http://maven.jzy3d.org/snapshots</url>
+  </repository>
+  <repository>
+     <id>jzy3d-releases</id>
+     <name>Jzy3d Releases</name>
+     <url>http://maven.jzy3d.org/releases</url>
+  </repository> 
     </repositories>    
     <packaging>jar</packaging>
     <dependencies>

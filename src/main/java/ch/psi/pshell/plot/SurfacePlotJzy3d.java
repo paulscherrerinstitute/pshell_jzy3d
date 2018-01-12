@@ -81,7 +81,7 @@ public class SurfacePlotJzy3d extends SurfacePlotBase {
                 }
                 break;
             case Mac:
-                path += "macosx-universal";
+                path += "macosx-universal/";
                 break;
         }
 
