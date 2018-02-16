@@ -1066,7 +1066,7 @@ public class SurfacePlotJzy3d extends SurfacePlotBase {
     }
 
     @Override
-    public BufferedImage getSnapshot() {
+    public BufferedImage getSnapshot(Dimension size) {
 
         File temp = null;
         try {
@@ -1083,7 +1083,7 @@ public class SurfacePlotJzy3d extends SurfacePlotBase {
     }
 
     @Override
-    public void saveSnapshot(String filename, String format) throws IOException {
+    public void saveSnapshot(String filename, String format, Dimension size) throws IOException {
         if (chart != null) {
             chart.screenshot(new File(filename));
         }
