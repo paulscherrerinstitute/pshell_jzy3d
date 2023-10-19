@@ -3,25 +3,45 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ch.psi</groupId>
     <artifactId>jzy3d</artifactId>
-    <version>1.9.0</version>
+    <version>1.20.0</version>
     <repositories>
   <repository>
      <id>jzy3d-snapshots</id>
      <name>Jzy3d Snapshots</name>
-     <url>http://maven.jzy3d.org/snapshots</url>
+     <url>https://maven.jzy3d.org/snapshots</url>
   </repository>
   <repository>
      <id>jzy3d-releases</id>
      <name>Jzy3d Releases</name>
-     <url>http://maven.jzy3d.org/releases</url>
+     <url>https://maven.jzy3d.org/releases</url>
   </repository> 
+    <repository>
+        <id>releases</id>
+        <name>releases</name>
+        <url>https://artifacts.psi.ch/artifactory/releases</url>
+    </repository>    
+    <repository>
+        <id>libs-snapshots-local</id>
+        <name>libs-snapshots-local</name>
+        <url>https://artifacts.psi.ch/artifactory/libs-snapshots-local/</url>
+    </repository>  
+    <repository>
+        <id>scijava-pub</id>
+        <name>scijava-pub</name>
+        <url>https://maven.scijava.org/content/repositories/public/</url>
+    </repository>  
+    <repository>
+        <id>scijava</id>
+        <name>scijava</name>
+        <url>https://maven.scijava.org/</url>
+    </repository>     
     </repositories>    
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
                 <groupId>org.jzy3d</groupId>
-                <artifactId>jzy3d-api</artifactId>
-                <version>1.0.0</version>
+                <artifactId>jzy3d-native-jogl-awt</artifactId>
+                <version>2.2.1</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
@@ -29,6 +49,12 @@
             <version>${project.version}</version>     
             <scope>provided</scope>          
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.4</version>
+            <scope>test</scope>
+        </dependency>        
     </dependencies>
     <build>
         <plugins>  

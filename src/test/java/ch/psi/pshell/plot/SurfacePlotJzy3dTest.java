@@ -24,7 +24,7 @@ public class SurfacePlotJzy3dTest {
 
     @Test
     public void testSomeMethod() throws InterruptedException {
-        final SurfacePlotJzy3d plot = new SurfacePlotJzy3d();
+        final SurfacePlotJzy3dExtr plot = new SurfacePlotJzy3dExtr();
         plot.setTitle("Matrix Plot Test");        
 
         double[][] d= new double[201][101];
